@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0 auto;
+    width: 360px;
+    background-color: #1e1e1e;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  blockquote {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .content-section_theme_dark {
+    background-color: #131313;
+    color: #CCCCCC;
+  }
+
+  .content-section_theme_bright {
+    background-color: #FEE42A;
+    color: #131313;
+  }
+
+  .header {
+    padding: 24px 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 132px;
+  }
+
+  .header__menu-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 12px;
+  }
+
+  .header__menu-item_active{
+    text-decoration: none;
+  }
+
+  .header__menu-link {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .cover {
+    padding-left: 20px;
+    padding-top: 7px;
+    background-image: url('/images/cover.svg');
+    background-repeat: no-repeat;
+    background-size: 95% auto;
+    background-position: 100% 100%;
+  }
+
+  .cover__title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cover span{
+    display: block;
+  }
+  
+  .accent-span {
+    font-family: 'EB Garamond', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 100%;
+  }
+
+  .text-center {
+    margin-left: 46px;
+  }
+
+  .text-right{
+    text-align: right;
+  }
+
+  .cover__title .text-right {
+    margin-right: 24px;
+    padding-bottom: 5px;
+  }
+
+  .intro {
+    padding: 30px 20px 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .intro__heading {
+    display: flex;
+  }
+
+  .intro__title{
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .intro__main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    line-height: 135%;
+  }
+
+  time {
+    white-space: nowrap;
+  }
+
+  .reasons {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-height: 1368px;
+  }
+
+  .content-section__subtitle {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content-section__subtitle span {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 115%;
+  }
+
+  .content-section__introduction {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content-section__list {
+    padding-left: 36px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .content-section__list-item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  
+  .content-section__list-accent {
+    font-weight: bold;
+  }
+
+  .how-to {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-height: 1749px;
+  }
+
+  .how-to .content-section__subtitle {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .how-to__introduction {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+  }
+
+  .cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  .card_theme_dark {
+    background-color: #343434;
+    color: #F5F5F5;
+  }
+
+  .card_theme_bright {
+    background-color: #FEE42A;
+    color: #131313;
+  }
+
+  .cards-list {
+    list-style: none;
+  }
+
+  .card__author {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 128px;
+  }
+
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;  
+  }
+
+  .card__title, .card__author-name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 135%;
+  }
+
+  .card__content h3 {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 135%;
+  }
+
+  .card__content p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  
+  footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #FEE42A;
+  }
+
+  .footer__links {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+  }
+
+  .footer__links li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+  }
