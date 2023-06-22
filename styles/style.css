@@ -1,11 +1,5 @@
-* {
-    box-sizing: border-box;
-  }
-
   body {
     margin: 0;
-    padding: 0;
-    width: 360px;
     background-color: #1e1e1e;
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -27,6 +21,12 @@
 
   a {
     color: inherit;
+  }
+
+  .content-section {
+    box-sizing: border-box;
+    width: 360px;
+    margin: 0 auto;
   }
 
   .content-section_theme_dark {
